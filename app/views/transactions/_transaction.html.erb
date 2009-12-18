@@ -1,6 +1,15 @@
-<tr>
-  <td><%= transaction.created_on %></td>
+<tr class="<%= cycle('even', 'odd') %>">
+  <td><%= transaction.created_on.to_s(:danish) %></td>
   <td><%= transaction.text %></td>
-  <td><%= transaction.amount %></td>
-  <td><%= transaction.balance %></td>
+  <td><%= sprintf("%.2f", transaction.amount / 100.0) %></td>
+  <td><%= sprintf("%.2f", transaction.balance / 100.0) %></td>
+  <td>
+    <% form_for(transaction, :url => transaction_taggings_path(transaction)) do |f| %>
+      <% @tags.each do |tag|%>
+        <%= check_box_tag("tags[]", tag, transaction.tag_list.include?(tag.name))%>
+        <%= tag %>
+      <% end %>
+      <%= f.submit "Gem" %>
+    <% end %>
+  </td>
 </tr>
