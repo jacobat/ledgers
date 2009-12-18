@@ -34,8 +34,6 @@ class Importer
             p data
             raise
           end
-        else
-          Rails.logger.debug("NOT CREATED: #{row.to_hash.inspect}")
         end
       end
     end
