@@ -1,0 +1,307 @@
+body { background-color: #fff; color: #333; padding: 0px; margin: 0px; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+td {
+  text-align: left;
+  padding: 6px;
+}
+
+tr.odd {
+  background: #ccc;
+}
+
+#topmenu {
+  margin: 0px;
+  padding: 0px;
+}
+
+#topmenu ul
+{
+  border: 1px solid #aaa;
+padding-left: 0;
+margin-left: 0;
+margin-top: 0;
+/*background-color: #ccc;*/
+/*color: #333;*/
+float: left;
+width: 100%;
+font-family: arial, helvetica, sans-serif;
+}
+
+#topmenu ul li { display: inline; }
+
+#topmenu ul li a
+{
+padding: 0.2em 1em;
+/*background-color: #ccc;*/
+text-decoration: none;
+float: left;
+border-right: 1px solid #aaa;
+
+}
+
+#topmenu ul li a:hover
+{
+  background-color: #ccc;
+  color: #444;
+}
+
+#submenu {
+  margin: 0px;
+  padding: 0px;
+}
+
+#submenu ul
+{
+  border: 1px solid #aaa;
+padding-left: 0;
+margin-left: 0;
+margin-top: 0;
+/*background-color: #ccc;*/
+/*color: #333;*/
+float: left;
+width: 100%;
+font-family: arial, helvetica, sans-serif;
+}
+
+#submenu ul li { display: inline; }
+
+#submenu ul li a
+{
+padding: 0.2em 1em;
+/*background-color: #ccc;*/
+text-decoration: none;
+float: left;
+border-right: 1px solid #aaa;
+
+}
+
+#submenu ul li a:hover
+{
+  background-color: #ccc;
+  color: #444;
+}
+
+
+.clear {
+  clear: both;
+}
+
+#container {
+  margin: 20px 20px 0px 20px;
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+
+#birthdays {
+  padding: 4px;
+/*  background: #ff5050;*/
+/*  color: white;*/
+  border: 1px solid #f00;
+  margin-bottom: 4px;
+}
+
+.birthdaytext {
+  background: url("/images/flag_red.png") no-repeat center left;
+  padding-left: 20px;
+  display: inline;
+  padding-right: 20px;
+}
+
+.birthdayclose {
+  display: inline;
+  float: right;
+  background: url("/images/cancel.png") no-repeat center left;
+  padding-left: 20px;
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
+#eviction {
+  padding: 4px;
+/*  background: #ff5050;*/
+/*  color: white;*/
+  border: 1px solid #0c0;
+  margin-bottom: 4px;
+  background: #9f9;
+}
+
+.evictiontext {
+/*  background: url("/images/flag_red.png") no-repeat center left;*/
+/*  padding-left: 20px;*/
+  display: inline;
+  padding-right: 20px;
+}
+
+.evictionclose {
+  display: inline;
+  float: right;
+  background: url("/images/cancel.png") no-repeat center left;
+  padding-left: 20px;
+  text-align: right;
+}
+
+#notice {
+  background: #cfc;
+  padding: 4px;
+  color: green;
+  border: 1px solid #aca;
+}
+
+#warn {
+  background: #ffc;
+  padding: 4px;
+  color: #886;
+  border: 1px solid #cca;
+}
+
+#error {
+  background: #fcc;
+  padding: 4px;
+  color: #a44;
+  border: 1px solid #caa;
+}
+
+h1, h2 {
+  color: #5494AF;
+}
+
+.box, .fullbox {
+  border: 1px solid #aaa;
+  padding: 6px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.box {
+  width: 40%;
+}
+
+.imagebox {
+  border: 1px solid #aaa;
+  padding: 6px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.add {
+  background: url("/images/add.png") no-repeat bottom left;
+  padding-left: 20px;
+}
+
+.delete {
+  background: url("/images/delete.png") no-repeat bottom left;
+  padding-left: 20px;
+}
+
+.note {
+  background: url("/images/note.png") no-repeat bottom right;
+  padding-right: 20px;
+}
+
+.sygdom {
+  background: #f88;
+  color: black;
+}
+
+.kursus {
+  background: #aaf;
+}
+
+.ferie {
+  background: #ff8;
+}
+
+.legend {
+  padding: 4px;
+  display: inline;
+  border: 1px solid #777;
+}
+
+#logo {
+  font-size: 2em;
+  padding: 20px 40px 0px 40px;
+  font-family: verdana;
+  font-weight: bold;
+  text-align: right;
+}
+
+#footer {
+  margin: 0px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.employee {
+/*  border: 1px solid #aaa;*/
+  float: left;
+  padding: 4px;
+  width: 110px;
+  height: 150px;
+  margin: 4px;
+}
+
+.inpage-navigation {
+  padding-bottom: 6px;
+}
+
+.holiday {
+  background: #bfb;
+}
