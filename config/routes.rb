@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :transactions do |tx|
+  map.resources :transactions, :collection => { :untagged => :get, :by_amount => :get } do |tx|
     tx.resource :taggings
   end
   # The priority is based upon order of creation: first created -> highest priority.

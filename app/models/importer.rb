@@ -11,6 +11,8 @@ class Importer
           'created_on'
         when "Tekst"
           'text'
+        when 'Afstemt'
+          'afstemt'
         else
           h
         end
@@ -18,9 +20,9 @@ class Importer
     end
     def transactions
       init_fastercsv
-      filename = "/Users/jacob/Downloads/Danske24_7-3194182848-20091218-18135099.csv"
+      filename = "/Users/jacob/Downloads/loenkonto-1.csv"
       csvcontent = Iconv::iconv("utf8", "iso8859-1", File.read(filename))[0]
-      FasterCSV.parse(csvcontent, :headers => true, :header_converters => :transaction_headers, :col_sep => ";") do |row|
+      FasterCSV.parse(csvcontent, :headers => true, :header_converters => :transaction_headers, :col_sep => ",") do |row|
         if row.to_hash['Status'] == "Udført"
           begin
             data = row.to_hash.except('Status')
@@ -32,7 +34,7 @@ class Importer
           rescue
             puts "Could not create transaction for"
             p data
-            raise
+            # raise
           end
         end
       end

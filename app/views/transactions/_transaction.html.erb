@@ -6,7 +6,7 @@
   <td>
     <% form_for(transaction, :url => transaction_taggings_path(transaction)) do |f| %>
       <% @tags.each do |tag|%>
-        <%= check_box_tag("tags[]", tag, transaction.tag_list.include?(tag.name))%>
+        <%= check_box_tag("tags[]", tag, transaction.tag_list.include?(tag.name), :id => "tag_#{tag.name}_#{transaction.id}", :class => "checkable")%>
         <%= tag %>
       <% end %>
       <%= f.submit "Gem" %>
